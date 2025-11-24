@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta value="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <div class="logo">Netflix</div>
+    <nav>
+      <ul>
+        <li><a href="index.jsp">Home</a></li>
+        <li><a href="movie.html">Movies</a></li>
+        <li><a href="plan.html">Plan</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+    <form action="movie.jsp">
+    <!-- ACTION -->
+    <section class="section">
+    <h2>Action</h2>
+    <div class="card-container">
+      <div class="card">
+        <button type="submit" name="movie" value="Leo">
+          <img src="poster/Leo.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Leo</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Jawan">
+        <img src="poster/Jawan.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Jawan</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Good Bad Ugly">
+        <img src="poster/Good bad ugly.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Good Bad Ugly</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Bigil">
+        <img src="poster/Bigil.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Bigil</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Asuran">
+        <img src="poster/Asuran.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Asuran</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Kennedy Club">
+        <img src="poster/Kennedy Club.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Kennedy Club</p>
+      </div>
+    </div>
+    </section>
+  <!-- LOVE -->
+  <section class="section">
+    <h2>Love</h2>
+    <div class="card-container">
+      <div class="card">
+        <button type="submit" name="movie" value="Joe">
+        <img src="poster/Joe.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Joe</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Court State vs Nobody">
+        <img src="poster/court state vs a nobody.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Court State vs Nobody</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Ace">
+        <img src="poster/Ace.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Ace</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Hi Nanna">
+          <img src="poster/Hi Nanna.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Hi Nanna</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Good Night">
+          <img src="poster/Good night.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Good Night</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Alappuzha Gymkhana">
+          <img src="poster/Alappuzha Gymkhana.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Alappuzha Gymkhana</p>
+      </div>
+    </div>
+  </section>
+  <!-- COMEDY -->
+  <section class="section">
+    <h2>Comedy</h2>
+    <div class="card-container">
+      <div class="card">
+        <button type="submit" name="movie" value="DD Returns">
+          <img src="poster/DD returns.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>DD Returns</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Sumo"> 
+          <img src="poster/sumo.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Sumo</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Jackpot">  
+          <img src="poster/Jackpot.jpg" alt="Movie Thumbnail">
+        </button>
+        <p>Jackpot</p>
+      </div>
+      <div class="card">
+        <button type="submit" name="movie" value="Tourist Family">
+        <img src="poster/Tourist family.jpg" alt="Movie Thumbnail">
+      </button>
+        <p>Tourist Family</p>
+      </div>
+    </div>
+  </section>
+  </form>
+</body>
+</html>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 60px 40px;
+  /* background-image: url('images/bg.jpg'); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+  overflow-x: hidden;
+}
+.section h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+.card-container::-webkit-scrollbar {
+  height: 8px;
+}
+.card-container::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+.card {
+  flex: none;
+  width: 200px;
+  background-color: #222;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.card p {
+  padding: 10px;
+  font-size: 0.9em;
+  color: #fff;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+img{
+  width: 200px;
+  height: 300px;
+  display: block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #e50914;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;  
+  background: transparent;
+}
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e50914;
+  margin-right: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+</style>

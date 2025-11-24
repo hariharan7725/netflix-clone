@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Sign-up</title>
+    <link rel="jsp" href="signup.jsp">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form method="post" action="signup.jsp">
+            <input type="text" placeholder="Full Name" required name="name">
+            <input type="email" placeholder="Email id" required name="email">
+            <input type="password" placeholder="Create Password" required name="password1">
+            <button>Sign Up</button>
+            <p>Already have an account? <a href="signin.html">Sign in now.</a></p>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    background-image: url('images/netflixbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signup-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #333;
+    border: none;
+    color: white;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+p {
+    font-size: 12px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+</style>
