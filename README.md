@@ -1,0 +1,1 @@
+A lightweight Netflix-style web app built with HTML, CSS, JSP, JDBC, and MySQL. It focuses on user authentication, browsing catalogs, viewing details, search, watchlists, and admin content management. The goal is to demonstrate a clean MVC structure on Tomcat with JDBC-based data access, using standard JSP for views and responsive CSS for a familiar streaming UI.
