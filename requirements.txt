@@ -1,0 +1,4 @@
+# For a Java web app deployment, list server dependencies only
+Java >= 8
+Tomcat >= 9     # Or any servlet container
+mysql-connector-java 
